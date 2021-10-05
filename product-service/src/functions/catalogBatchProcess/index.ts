@@ -1,4 +1,4 @@
-import { handlerPath } from '@libs/handlerResolver';
+import { handlerPath } from "@libs/handlerResolver";
 
 export default {
   handler: `${handlerPath(__dirname)}/handler.main`,
@@ -7,9 +7,9 @@ export default {
       sqs: {
         batchSize: 5,
         arn: {
-          'Fn::GetAtt': ['catalogItemsQueue', 'Arn']
-        }
-      }
-    }
-  ]
+          "Fn::GetAtt": ["catalogItemsQueue", "Arn"],
+        },
+      },
+    },
+  ],
 };
